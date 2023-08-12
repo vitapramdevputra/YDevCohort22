@@ -1,0 +1,11 @@
+Async Apex
+    - how many types of async?
+        - 4
+            - Future        --> @future
+            - Batch         --> implements  Database.batchable<sObject> 
+                                -> start , execute, finish
+            - Queueable     --> implements Queueable
+                                -> execute
+                                    -> we can chain queueable
+                                    -> we can pass sobject
+            - Schedulable
