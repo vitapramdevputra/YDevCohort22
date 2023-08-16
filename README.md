@@ -1,5 +1,6 @@
 # A NEW Feature is released. Feature #1
-Releasing new feature shortly.
+New Feature already released. 
+Users are enjoying.
 
 # Salesforce DX Project: Next Steps
 
