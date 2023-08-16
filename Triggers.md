@@ -15,6 +15,8 @@ Triggers Revision.
     - update data while updating
         - before update context
 
+    - availability of all the context variable are mentioned below
+    
                 Trigger.New     Trigger.NewMap      Trigger.old     Trigger.oldMap
 Before Insert       Yes          Null (bcz No Id)        Null            Null      -> there is NO OLD Record
 After  Insert       Yes              Yes                 Null            Null      -> there is NO OLD Record
