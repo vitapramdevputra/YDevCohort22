@@ -69,12 +69,14 @@ public class AccountTriggerHandler {
    public static void createRelatedOpportunity(List<account> accTriggerNew) {
         List<Opportunity> createNewOpps = new List<Opportunity>();
 
+        //to get org default value use getOrgDefaults method of custom setting
+        DefaultOppInfo__c defOpp = DefaultOppInfo__c.getOrgDefaults();
         for (account newAcc : accTriggerNew) {
             Opportunity op = new Opportunity();
-            op.Name = 'Opportunity 1';
+            op.Name = defOpp.OppName__c;
             op.AccountId = newAcc.Id;
             op.CloseDate = date.today();
-            op.StageName = 'Prospecting';
+            op.StageName = defOpp.stagename__c;
             createNewOpps.add(op);
         }
         if (!createNewOpps.isEmpty()) {

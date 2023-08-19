@@ -1,4 +1,12 @@
 trigger AccountTrigger on Account (before insert, after insert, before update, after update, before delete, after delete) {
+
+    TriggerSwitch__mdt accTriggerSwitch = TriggerSwitch__mdt.getInstance('Account');
+    if (!accTriggerSwitch.Enabled__c) {
+        system.debug('Account trigger switch if OFF. Go back now.');
+        return;
+    } else {
+        system.debug('Account trigger switch if ON. Pl cont....');
+    }
    
     if (Trigger.isBefore && (Trigger.isInsert || Trigger.isUpdate)) {
         AccountTriggerHandler.accountValidation1(trigger.new);
