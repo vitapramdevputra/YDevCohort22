@@ -55,7 +55,7 @@ public class DatabaseDML {
             new account(name='Alex', phone ='9645387063'),
             new account(name='Ricky', phone ='9547920931'),
             new account(name='Jeff', phone ='8636762637'),
-            new account(name='Mike', phone ='97636484688')         
+            new account()         
         };
 
         List<database.SaveResult> allResults = database.insert(newAccounts, false);
