@@ -1,0 +1,16 @@
+Callout Explain
+
+
+Deserialize -> json to APEX objects
+    untyped -> map<string, object>
+    type    -> converting it to a proper apex class (account, contact, animalwrapper)
+Serialize   -> apex objects to json
+
+
+
+
+
+Enpoint: https://api.thedogapi.com/v1/breeds
+GET
+x-api-key   live_tInW632ehyteYOcKY8201ub6rcB4NL2qd3v1YyqjujT6phrB7fJisA727KgzuOO3
+Content-Type    application/json
