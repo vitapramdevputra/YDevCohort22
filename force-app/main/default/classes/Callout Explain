@@ -14,3 +14,20 @@ Enpoint: https://api.thedogapi.com/v1/breeds
 GET
 x-api-key   live_tInW632ehyteYOcKY8201ub6rcB4NL2qd3v1YyqjujT6phrB7fJisA727KgzuOO3
 Content-Type    application/json
+
+
+
+From  TestMethods
+    - apex will restrict all the callouts.
+        - because external app do NOT KNOW that it is coming from test class.
+
+    - then, how can we test callouts?
+        - implement MOCK response. Mock Class.
+            - in other words, we will create FAKE api callout response.
+
+
+KEY: 
+3MVG9n_HvETGhr3AF2Vj._jTmHDC85NUok0ASiqLOPJWNNJZVJRbsrCyu5bktYjLgel59vS.7eeN5VhnlG2rC
+
+Secret: 
+45AB082BFD6E9DE30A6A173E04852E238256E1E9C95199B03D303B4EE828262D
